@@ -24,9 +24,9 @@
   </licenses>
   
   <scm>
-    <connection>scm:svn:http://simple-java-mail.googlecode.com/svn/trunk</connection>
-    <developerConnection>scm:svn:https://simple-java-mail.googlecode.com/svn/trunk</developerConnection>
-    <url>http://simple-java-mail.googlecode.com/svn/trunk</url>
+    <connection>scm:git:git@github.com:focusnetworks/simple-java-mail.git</connection>
+    <url>scm:git:git@github.com:focusnetworks/simple-java-mail.git</url>
+    <developerConnection>scm:git:git@github.com:focusnetworks/simple-java-mail.git</developerConnection>
   </scm>
   
   <developers>
@@ -59,22 +59,4 @@
 		<version>1.4.7</version>
 	</dependency>
   </dependencies>
-  
-<!-- 	<build> -->
-<!-- 		<plugins> -->
-<!-- 			<plugin> -->
-<!-- 				<groupId>org.apache.maven.plugins</groupId> -->
-<!-- 				<artifactId>maven-gpg-plugin</artifactId> -->
-<!-- 				<executions> -->
-<!-- 					<execution> -->
-<!-- 						<id>sign-artifacts</id> -->
-<!-- 						<phase>verify</phase> -->
-<!-- 						<goals> -->
-<!-- 							<goal>sign</goal> -->
-<!-- 						</goals> -->
-<!-- 					</execution> -->
-<!-- 				</executions> -->
-<!-- 			</plugin> -->
-<!-- 		</plugins> -->
-<!-- 	</build> -->
 </project>
