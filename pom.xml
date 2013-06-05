@@ -1,6 +1,4 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-
-  
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.codemonkey.simplejavamail</groupId>
   <artifactId>simple-java-mail</artifactId>
@@ -9,7 +7,6 @@
   <version>2.3-focus-SNAPSHOT</version>
   <description>A light weight wrapper for the JavaMail SMTP API</description>
   <url>http://code.google.com/p/simple-java-mail/</url>
-  
   <licenses>
     <license>
       <name>The Apache Software License, Version 2.0</name>
@@ -17,13 +14,11 @@
       <distribution>repo</distribution>
     </license>
   </licenses>
-  
   <scm>
     <connection>scm:git:git@github.com:focusnetworks/simple-java-mail.git</connection>
     <url>scm:git:git@github.com:focusnetworks/simple-java-mail.git</url>
     <developerConnection>scm:git:git@github.com:focusnetworks/simple-java-mail.git</developerConnection>
   </scm>
-  
   <developers>
     <developer>
       <id>benny</id>
@@ -36,22 +31,29 @@
       </roles>
     </developer>
   </developers>
-  
   <issueManagement>
-  	<system>Google Code</system>
-  	<url>http://code.google.com/p/simple-java-mail/issues/</url>
+    <system>Google Code</system>
+    <url>http://code.google.com/p/simple-java-mail/issues/</url>
   </issueManagement>
-  
   <dependencies>
     <dependency>
       <groupId>log4j</groupId>
       <artifactId>log4j</artifactId>
       <version>1.2.16</version>
     </dependency>
-	<dependency>
-		<groupId>javax.mail</groupId>
-		<artifactId>mail</artifactId>
-		<version>1.4.7</version>
-	</dependency>
+    <dependency>
+      <groupId>javax.mail</groupId>
+      <artifactId>mail</artifactId>
+      <version>1.4.7</version>
+    </dependency>
   </dependencies>
+  <build>
+    <plugin>
+      <groupId>org.apache.maven.plugins</groupId>
+      <artifactId>maven-gpg-plugin</artifactId>
+      <configuration>
+        <skip>true</skip>
+      </configuration>
+    </plugin>
+  </build>
 </project>
